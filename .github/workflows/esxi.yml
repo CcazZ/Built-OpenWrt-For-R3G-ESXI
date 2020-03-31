@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt
+name: Build OpenWrt for esxi
 
 on:
   release:
@@ -15,21 +15,21 @@ on:
     branches:
       - master
     paths:
-      - '.config'
+      - 'esxi.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: .config
-  DIY_SH: diy.sh
-  SSH_ACTIONS: false
+  CONFIG_FILE: esxi.config
+  DIY_SH: esxi_diy.sh
+  SSH_ACTIONS: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
+  UPLOAD_COWTRANSFER: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -65,7 +65,7 @@ jobs:
     - name: Load custom configuration
       run: |
         [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
+        [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/esxi.config
         chmod +x $DIY_SH
         cd openwrt
         ../$DIY_SH
