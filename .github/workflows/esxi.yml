@@ -125,5 +125,6 @@ jobs:
     - name: Upload firmware to cowtransfer
       if: env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
       run: |
+        cd openwrt
         curl -sL https://git.io/cowtransfer | sh
-        ./cowtransfer-uploader -s -p 8 openwrt/openwrt.tar.gz
+        ./cowtransfer-uploader -s -p 8 openwrt.tar.gz
