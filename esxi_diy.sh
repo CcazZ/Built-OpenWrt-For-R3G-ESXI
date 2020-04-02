@@ -15,5 +15,5 @@ git clone https://github.com/sypopo/luci-theme-atmaterial.git package/lean/luci-
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #É¾³ıÄ¬ÈÏÃÜÂë
 sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
-./scripts/feeds update -a
-./scripts/feeds install -a
+#Ìí¼ÓAdGuardHome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
