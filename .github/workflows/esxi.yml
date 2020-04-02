@@ -112,8 +112,8 @@ jobs:
     - name: zip files
       id: zip
       run: |
-        cd openwrt
-        tar -zcvf openwrt.tar.gz bin/*
+        cd openwrt/bin/
+        tar -zcvf openwrt.tar.gz packages/* targets/*
 
     - name: Upload firmware directory
       uses: actions/upload-artifact@master
@@ -125,6 +125,6 @@ jobs:
     - name: Upload firmware to cowtransfer
       if: env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
       run: |
-        cd openwrt
+        cd openwrt/bin/
         curl -sL https://git.io/cowtransfer | sh
         ./cowtransfer-uploader -s -p 8 openwrt.tar.gz
