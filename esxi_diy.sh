@@ -23,3 +23,5 @@ git clone https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-
 git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
 #Ìí¼Ópasswall
 git clone https://github.com/hong0980/luci-app-passwall.git package/lean/luci-app-passwall
+#open-vm-tools
+git clone https://github.com/fangli/openwrt-vm-tools.git package/lean/openwrt-vm-tools
