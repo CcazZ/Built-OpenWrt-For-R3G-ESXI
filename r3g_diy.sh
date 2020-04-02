@@ -22,7 +22,7 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean
 #添加smartdns
 git clone https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 #添加openAppFilter
-git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
+git clone https://github.com/destan19/OpenAppFilter.git package/lean/
 #添加passwall
 #git clone https://github.com/hong0980/luci-app-passwall.git package/lean/luci-app-passwall
 #open-vm-tools
