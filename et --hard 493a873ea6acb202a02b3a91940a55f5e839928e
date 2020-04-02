@@ -1,0 +1,124 @@
+[33mcommit 493a873ea6acb202a02b3a91940a55f5e839928e[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: C C <lcc.0705@qq.com>
+Date:   Thu Apr 2 14:52:14 2020 +0800
+
+    new esxi.config
+
+[33mcommit 23fac34abce80c33b9d66c4f1eb1f590e6b212ab[m
+Author: C C <lcc.0705@qq.com>
+Date:   Thu Apr 2 14:48:16 2020 +0800
+
+    modify tar files
+
+[33mcommit ba70ea86082d113c7dcbe127cdcd3cd2ea70960f[m
+Author: C C <lcc.0705@qq.com>
+Date:   Thu Apr 2 12:08:45 2020 +0800
+
+    111
+
+[33mcommit 83fd7b7428630ea86b65f028ccfaea0af76c03a1[m
+Author: C C <lcc.0705@qq.com>
+Date:   Wed Apr 1 22:57:17 2020 +0800
+
+    zip
+
+[33mcommit a60bcd5e90d419fde4b6c70f83363113742b20cd[m
+Author: C C <lcc.0705@qq.com>
+Date:   Wed Apr 1 20:25:49 2020 +0800
+
+    修复错误
+
+[33mcommit 09b7af3a62c8ed0ad1961bcb1c56fafcd06676fa[m
+Author: C C <lcc.0705@qq.com>
+Date:   Wed Apr 1 20:23:00 2020 +0800
+
+    修复错误
+
+[33mcommit dc945bf3d22246fd2577c53e1ea0adfefab6a5db[m
+Author: C C <lcc.0705@qq.com>
+Date:   Wed Apr 1 20:13:37 2020 +0800
+
+    打包bin目录并上传
+
+[33mcommit 6d233943158b98502353926f5c81cf41b5b9747b[m
+Author: C C <lcc.0705@qq.com>
+Date:   Wed Apr 1 17:00:03 2020 +0800
+
+    修改错误
+
+[33mcommit b4308c13a4d58b32f6f6b4b371c44c76a2468b0a[m
+Merge: 40b0a51 033dbd7
+Author: C C <lcc.0705@qq.com>
+Date:   Wed Apr 1 16:31:17 2020 +0800
+
+    Merge branch 'master' of https://github.com/ccgtmn/Built-OpenWrt-For-R3G-ESXI.git
+
+[33mcommit 033dbd794531a68be7db8c578c47e7bb6712713e[m
+Author: ccgtmn <lcc.0705@qq.com>
+Date:   Wed Apr 1 09:10:26 2020 +0800
+
+    Update esxi.yml
+    
+    更改为openwt源
+
+[33mcommit 40b0a5167f29e8707761490dbf4d172f77f89b1b[m
+Author: C C <lcc.0705@qq.com>
+Date:   Wed Apr 1 09:06:01 2020 +0800
+
+    切换到openwrt代码
+
+[33mcommit d5733bc7d8a2906cf5e6377186497bdf4c0048b2[m
+Author: ccgtmn <lcc.0705@qq.com>
+Date:   Tue Mar 31 22:27:18 2020 +0800
+
+    Update esxi.yml
+    
+    no ssh
+
+[33mcommit eba0c83cf51f83bcde06d64862e5d5eb1fc20968[m
+Author: C C <lcc.0705@qq.com>
+Date:   Tue Mar 31 22:23:22 2020 +0800
+
+    Signed-off-by: C C <lcc.0705@qq.com>
+
+[33mcommit 87fe132da928a1f17e09d15738701b01e27b9ad1[m
+Author: C C <lcc.0705@qq.com>
+Date:   Tue Mar 31 16:15:31 2020 +0800
+
+    自定义esxi固件
+
+[33mcommit 648ae1dd7de3dab9d0b0d85f5ed26d311c2be933[m
+Author: C C <lcc.0705@qq.com>
+Date:   Tue Mar 31 16:11:37 2020 +0800
+
+    更新esxi.config
+
+[33mcommit e01100e3e134f6dfcb2395bd002d7082ca21cc3d[m
+Author: C C <lcc.0705@qq.com>
+Date:   Tue Mar 31 16:06:20 2020 +0800
+
+    111
+
+[33mcommit 1805c15f48cf0865fafef8b4702507d0bf151a8e[m
+Author: C C <lcc.0705@qq.com>
+Date:   Tue Mar 31 12:40:59 2020 +0800
+
+    111
+
+[33mcommit 5a7936d137ac33f2bed67130ff76d71f0c4656bc[m
+Author: ccgtmn <lcc.0705@qq.com>
+Date:   Tue Mar 31 12:05:31 2020 +0800
+
+    Create esxi.config
+
+[33mcommit 3983438f3b3f8311bb1beef3f88018e0b0b8685a[m
+Author: ccgtmn <lcc.0705@qq.com>
+Date:   Tue Mar 31 12:05:11 2020 +0800
+
+    Create r3g.config
+
+[33mcommit 349234b17b1c53f1b58876a5450d0b8098dd0bde[m
+Author: ccgtmn <lcc.0705@qq.com>
+Date:   Tue Mar 31 12:00:17 2020 +0800
+
+    Initial commit
