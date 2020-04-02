@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build OpenWrt for R3G
+name: Build OpenWrt for xiaomi r3g
 
 on:
   release:
@@ -15,21 +15,23 @@ on:
     branches:
       - master
     paths:
-      - '.config'
+      - 'r3g.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
+#  REPO_URL: https://github.com/openwrt/openwrt
+#  REPO_BRANCH: master
   CONFIG_FILE: r3g.config
   DIY_SH: r3g_diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
+  UPLOAD_COWTRANSFER: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -106,6 +108,12 @@ jobs:
         rm -rf packages
         echo "::set-env name=FIRMWARE::$PWD"
         echo "::set-output name=status::success"
+        
+    - name: zip files
+      id: zip
+      run: |
+        cd openwrt/bin/
+        tar -zcvf openwrt.tar.gz packages/* targets/*
 
     - name: Upload firmware directory
       uses: actions/upload-artifact@master
@@ -117,5 +125,6 @@ jobs:
     - name: Upload firmware to cowtransfer
       if: env.UPLOAD_COWTRANSFER == 'true' && !cancelled()
       run: |
+        cd openwrt/bin/
         curl -sL https://git.io/cowtransfer | sh
-        ./cowtransfer-uploader -s -p 8 ${FIRMWARE}
+        ./cowtransfer-uploader -s -p 8 openwrt.tar.gz
