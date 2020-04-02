@@ -21,3 +21,5 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean
 git clone https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 #Ìí¼ÓopenAppFilter
 git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
+#Ìí¼Ópasswall
+git clone https://github.com/hong0980/luci-app-passwall.git package/lean/luci-app-passwall
