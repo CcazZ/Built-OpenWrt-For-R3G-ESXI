@@ -17,3 +17,7 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
 #Ìí¼ÓAdGuardHome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/luci-app-adguardhome
+#Ìí¼Ósmartdns
+git clone https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
+#Ìí¼ÓopenAppFilter
+git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
