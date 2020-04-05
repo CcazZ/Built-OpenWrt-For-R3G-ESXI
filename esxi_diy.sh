@@ -19,6 +19,8 @@ cd package/
 
 #添加openAppFilter
 git clone https://github.com/destan19/OpenAppFilter
+#open-vm-tools
+git clone https://github.com/fangli/openwrt-vm-tools
 
 ##########lede/package/lean目录下的插件##########
 cd lean/
@@ -27,9 +29,4 @@ cd lean/
 git clone https://github.com/sypopo/luci-theme-atmaterial
 #添加AdGuardHome
 git clone https://github.com/rufengsuixing/luci-app-adguardhome
-#添加smartdns
-git clone https://github.com/pymumu/luci-app-smartdns
-#添加passwall
-git clone https://github.com/hong0980/luci-app-passwall
-#open-vm-tools
-git clone https://github.com/fangli/openwrt-vm-tools
+

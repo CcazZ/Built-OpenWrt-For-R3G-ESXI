@@ -27,7 +27,7 @@ env:
 #  REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: master
   CONFIG_FILE: k2.config
-  DIY_SH: k2_diy.sh
+  DIY_SH: diy.sh
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
